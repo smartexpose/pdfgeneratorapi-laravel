@@ -1,5 +1,5 @@
 {
-    "name": "actualreports/pdfgeneratorapi-laravel",
+    "name": "smartexpose/pdfgeneratorapi-laravel",
     "type": "library",
     "description": "PDF Generator API package for Laravel",
     "keywords": [
@@ -16,10 +16,24 @@
             "role": "Developer"
         }
     ],
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "smartexpose/pdfgeneratorapi-php",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/smartexpose/pdfgeneratorapi-php",
+                    "type": "git",
+                    "reference": "v1.3.0"
+                }
+            }
+        }
+    ],
     "require": {
         "illuminate/support": "^6.0",
         "php" : ">=7.3",
-        "actualreports/pdfgeneratorapi-php": "^1.0"
+        "smartexpose/pdfgeneratorapi-php": "^1.0"
     },
     "require-dev": {
         "phpunit/phpunit" : ">=5.4.3"
